@@ -838,6 +838,10 @@ label {
 .mt-\[34px\] {
   margin-top: 34px;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 .p-1 {
   padding: 0.25rem;
@@ -854,10 +858,23 @@ label {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .p-5 {
@@ -970,6 +987,10 @@ label {
   overflow: hidden;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .rounded-\[10px\] {
   border-radius: 10px;
 }
@@ -1066,6 +1087,33 @@ label {
   -webkit-text-fill-color: transparent;
 }
 
+/* card border */
+.card {
+  width: 200px;
+  height: 250px;
+}
+.card-border {
+  width: 180px;
+  height: 190px;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#544b5c, #544b5c),
+    linear-gradient(45deg, #cf47eb 0%, #e14dff 30%, #4f8eef 75%, #6ee2f5 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 10px;
+}
+
+.card img {
+  width: 155px;
+  height: 180px;
+  top: 30%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-46%, -50%);
+  object-fit: fill;
+  border-radius: 10px;
+}
+
 .social-icon svg {
   width: 30px;
   height: auto;
@@ -1093,7 +1141,28 @@ label {
 .bg-overlay {
   background-color: #2f2636;
   border: 2px solid #cf47eb;
+  z-index: -100;
 }
+
+/* slider css */
+.swiper-wrapper {
+  padding-top: 20px;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+/* slider css */
 
 .hero-gradient-overlay {
   position: absolute;
