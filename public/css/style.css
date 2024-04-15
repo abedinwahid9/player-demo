@@ -776,6 +776,7 @@ label {
 
 .active {
   background-color: #cf8ae7;
+  transition: all 1s ease;
 }
 
 .absolute {
@@ -835,6 +836,10 @@ label {
   margin-top: 2.25rem;
 }
 
+.mt-9 {
+  margin-top: 2.5rem;
+}
+
 .mt-\[34px\] {
   margin-top: 34px;
 }
@@ -848,6 +853,12 @@ label {
 }
 .p-4 {
   padding: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-2 {
@@ -891,6 +902,9 @@ label {
 .flex {
   display: flex;
 }
+.flex-wrap {
+  flex-wrap: wrap;
+}
 
 .h-\[60px\] {
   height: 60px;
@@ -914,6 +928,10 @@ label {
 
 .w-\[60px\] {
   width: 60px;
+}
+
+.w-half {
+  width: 50%;
 }
 
 .w-fit {
@@ -964,6 +982,10 @@ label {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1009,6 +1031,25 @@ label {
 .bg-custom-black-mute {
   --tw-bg-opacity: 1;
   background-color: rgb(57 46 66 / var(--tw-bg-opacity));
+}
+
+.search-input {
+  border: 2px solid #cf47eb;
+  background-color: black;
+  padding: 5px;
+  border-radius: 9999px;
+}
+
+.search-input-field {
+  background-color: transparent;
+  width: 120px;
+}
+
+.search-input-field::placeholder {
+  color: white; /* Change the color to desired value */
+}
+.search-input-field:focus {
+  outline: none;
 }
 
 .object-contain {
@@ -1103,15 +1144,23 @@ label {
   border-radius: 10px;
 }
 
-.card img {
+.card .img {
   width: 155px;
   height: 180px;
   top: 30%;
   left: 50%;
-  z-index: 10;
+
   transform: translate(-46%, -50%);
+}
+
+.card .img img {
   object-fit: fill;
   border-radius: 10px;
+}
+
+.card .img p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 .social-icon svg {
@@ -1146,7 +1195,7 @@ label {
 
 /* slider css */
 .swiper-wrapper {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .swiper-slide {
@@ -1156,12 +1205,6 @@ label {
   align-items: center;
 }
 
-/* .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
 /* slider css */
 
 .hero-gradient-overlay {
@@ -1295,5 +1338,8 @@ label {
 
   .xl\:pl-10 {
     padding-left: 2.5rem;
+  }
+  .xl\:w-half {
+    width: 50%;
   }
 }

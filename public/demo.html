@@ -19,10 +19,10 @@
     <section class="py-10 px-5 md:p-10 xl:py-10 xl:pl-10 overflow-hidden">
       <div class="custom-container">
         <div
-          class="w-full flex xl:ml-0 xl:mr-0 flex-col xl:flex-row xl:items-center gap-[50px] relative"
+          class="flex xl:ml-0 xl:mr-0 flex-col xl:flex-row xl:items-center gap-[50px] relative"
         >
           <!-- Hero Image -->
-          <div class="relative">
+          <div class="relative xl:w-half w-full">
             <img src="images/hero.png" alt="Hero" />
 
             <div
@@ -41,7 +41,7 @@
           </div>
           <!-- Hero Image -->
           <!-- right section  -->
-          <div class="w-full md:w-[416px] flex-1">
+          <div class="w-full xl:w-half">
             <div class="w-[60px]">
               <svg
                 width="44"
@@ -123,29 +123,64 @@
                       Activities
                     </button>
                   </div>
-                  <input class="" type="text" name="" id="" />
+                  <!-- search bar -->
+                  <div class="flex gap-2 search-input">
+                    <div class="w-[18px]">
+                      <svg
+                        width="16"
+                        height="17"
+                        viewBox="0 0 16 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle
+                          cx="7.84418"
+                          cy="7.98651"
+                          r="5.99237"
+                          stroke="#BF86F9"
+                          stroke-width="1.21918"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M12.012 12.4653L14.3613 14.8086"
+                          stroke="#BF86F9"
+                          stroke-width="1.21918"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+
+                    <input
+                      class="search-input-field"
+                      type="text"
+                      placeholder="Search Games"
+                      id=""
+                    />
+                  </div>
                 </div>
-                <div class="flex gap-2 mt-4">
-                  <p class="custom-btn2 rounded-sm px-2 active">A</p>
-                  <p class="custom-btn2 rounded-sm px-2">B</p>
-                  <p class="custom-btn2 rounded-sm px-2">C</p>
-                  <p class="custom-btn2 rounded-sm px-2">D</p>
-                  <p class="custom-btn2 rounded-sm px-2">E</p>
-                  <p class="custom-btn2 rounded-sm px-2">F</p>
-                  <p class="custom-btn2 rounded-sm px-2">G</p>
-                  <p class="custom-btn2 rounded-sm px-2">H</p>
-                  <p class="custom-btn2 rounded-sm px-2">I</p>
-                  <p class="custom-btn2 rounded-sm px-2">J</p>
-                  <p class="custom-btn2 rounded-sm px-2">K</p>
-                  <p class="custom-btn2 rounded-sm px-2">M</p>
-                  <p class="custom-btn2 rounded-sm px-2">N</p>
-                  <p class="custom-btn2 rounded-sm px-2">O</p>
-                  <p class="custom-btn2 rounded-sm px-2">P</p>
-                  <p class="custom-btn2 rounded-sm px-2">Q</p>
-                  <p class="custom-btn2 rounded-sm px-2">R</p>
-                  <p class="custom-btn2 rounded-sm px-2">S</p>
-                  <p class="custom-btn2 rounded-sm px-2">T</p>
-                  <p class="custom-btn2 rounded-sm px-2">U</p>
+                <div class="flex flex-wrap gap-1 mt-4">
+                  <button class="custom-btn3 rounded-sm px-2 active">A</button>
+                  <button class="custom-btn3 rounded-sm px-2">B</button>
+                  <button class="custom-btn3 rounded-sm px-2">C</button>
+                  <button class="custom-btn3 rounded-sm px-2">D</button>
+                  <button class="custom-btn3 rounded-sm px-2">E</button>
+                  <button class="custom-btn3 rounded-sm px-2">F</button>
+                  <button class="custom-btn3 rounded-sm px-2">G</button>
+                  <button class="custom-btn3 rounded-sm px-2">H</button>
+                  <button class="custom-btn3 rounded-sm px-2">I</button>
+                  <button class="custom-btn3 rounded-sm px-2">J</button>
+                  <button class="custom-btn3 rounded-sm px-2">K</button>
+                  <button class="custom-btn3 rounded-sm px-2">M</button>
+                  <button class="custom-btn3 rounded-sm px-2">N</button>
+                  <button class="custom-btn3 rounded-sm px-2">O</button>
+                  <button class="custom-btn3 rounded-sm px-2">P</button>
+                  <button class="custom-btn3 rounded-sm px-2">Q</button>
+                  <button class="custom-btn3 rounded-sm px-2">R</button>
+                  <button class="custom-btn3 rounded-sm px-2">S</button>
+                  <button class="custom-btn3 rounded-sm px-2">T</button>
+                  <button class="custom-btn3 rounded-sm px-2">U</button>
                 </div>
               </div>
               <div class="my-4 py-4">
@@ -162,11 +197,10 @@
                     <!-- card -->
                     <div class="p-4 card relative">
                       <div class="card-border"></div>
-                      <img
-                        class="absolute"
-                        src="./images/leagueoflegends.png"
-                        alt=""
-                      />
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
                     </div>
                     <!-- card -->
                   </div>
@@ -174,11 +208,10 @@
                     <!-- card -->
                     <div class="p-4 card relative">
                       <div class="card-border"></div>
-                      <img
-                        class="absolute"
-                        src="./images/leagueoflegends.png"
-                        alt=""
-                      />
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
                     </div>
                     <!-- card -->
                   </div>
@@ -186,11 +219,10 @@
                     <!-- card -->
                     <div class="p-4 card relative">
                       <div class="card-border"></div>
-                      <img
-                        class="absolute"
-                        src="./images/leagueoflegends.png"
-                        alt=""
-                      />
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
                     </div>
                     <!-- card -->
                   </div>
@@ -198,11 +230,10 @@
                     <!-- card -->
                     <div class="p-4 card relative">
                       <div class="card-border"></div>
-                      <img
-                        class="absolute"
-                        src="./images/leagueoflegends.png"
-                        alt=""
-                      />
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
                     </div>
                     <!-- card -->
                   </div>
@@ -210,11 +241,10 @@
                     <!-- card -->
                     <div class="p-4 card relative">
                       <div class="card-border"></div>
-                      <img
-                        class="absolute"
-                        src="./images/leagueoflegends.png"
-                        alt=""
-                      />
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
                     </div>
                     <!-- card -->
                   </div>
@@ -222,25 +252,40 @@
                     <!-- card -->
                     <div class="p-4 card relative">
                       <div class="card-border"></div>
-                      <img
-                        class="absolute"
-                        src="./images/leagueoflegends.png"
-                        alt=""
-                      />
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
+                    </div>
+                    <!-- card -->
+                  </div>
+                  <div class="swiper-slide">
+                    <!-- card -->
+                    <div class="p-4 card relative">
+                      <div class="card-border"></div>
+                      <div class="absolute img">
+                        <img src="./images/leagueoflegends.png" alt="" />
+                        <p>League of Legends</p>
+                      </div>
                     </div>
                     <!-- card -->
                   </div>
                 </div>
               </div>
             </div>
-            <button type="submit" class="custom-btn custom-btn--shadow mt-9">
-              NEXT
-              <img
-                class="w-[10px] h-auto"
-                src="images/button-arrow-right.svg"
-                alt="arrow"
-              />
-            </button>
+            <div class="flex justify-center">
+              <button
+                type="submit"
+                class="custom-btn w-half custom-btn--shadow mt-10"
+              >
+                NEXT
+                <img
+                  class="w-[10px] h-auto"
+                  src="images/button-arrow-right.svg"
+                  alt="arrow"
+                />
+              </button>
+            </div>
 
             <div></div>
           </div>
@@ -253,12 +298,41 @@
     <!-- Initialize Swiper -->
     <script>
       var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 60,
+        breakpoints: {
+          375: {
+            slidesPerView: 1.8,
+            spaceBetween: 10,
+          },
+          520: {
+            slidesPerView: 2.5,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3.5,
+            spaceBetween: 5,
+          },
+
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+
+          1440: {
+            slidesPerView: 3.8,
+            spaceBetween: 40,
+          },
+        },
+
         pagination: {
           clickable: true,
         },
       });
     </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
