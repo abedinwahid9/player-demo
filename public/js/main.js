@@ -9,11 +9,11 @@
 //     this.classList.toggle("toggle-password--show");
 //   });
 
-const customBtn2 = document.querySelectorAll(".custom-btn2");
+const tab = document.querySelectorAll(".tab");
 
-customBtn2.forEach((customBtn) => {
+tab.forEach((customBtn) => {
   customBtn.addEventListener("click", () => {
-    customBtn2.forEach((btn) => {
+    tab.forEach((btn) => {
       btn.classList.remove("active");
     });
     customBtn.classList.add("active");

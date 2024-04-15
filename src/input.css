@@ -55,6 +55,11 @@
   }
 }
 
+.active {
+  background-color: #cf8ae7;
+  transition: all 1s ease;
+}
+
 @layer components {
   .custom-container {
     @apply w-full max-w-[1440px] mx-auto;

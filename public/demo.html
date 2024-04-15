@@ -6,7 +6,8 @@
     <title>Document</title>
 
     <!-- Custom CSS File -->
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="../src/output.css" />
 
     <meta name="theme-color" content="#fafafa" />
     <!-- Link Swiper's CSS -->
@@ -19,10 +20,10 @@
     <section class="py-10 px-5 md:p-10 xl:py-10 xl:pl-10 overflow-hidden">
       <div class="custom-container">
         <div
-          class="flex xl:ml-0 xl:mr-0 flex-col xl:flex-row xl:items-center gap-[50px] relative"
+          class="flex xl:ml-0 xl:mr-0 flex-col xl:flex-row xl:items-center gap-6 relative"
         >
           <!-- Hero Image -->
-          <div class="relative xl:w-half w-full">
+          <div class="relative xl:w-1/2 w-full">
             <img src="images/hero.png" alt="Hero" />
 
             <div
@@ -41,7 +42,7 @@
           </div>
           <!-- Hero Image -->
           <!-- right section  -->
-          <div class="w-full xl:w-half">
+          <div class="xl:w-1/2 w-full">
             <div class="w-[60px]">
               <svg
                 width="44"
@@ -99,32 +100,34 @@
             </div>
 
             <div class="mt-4">
-              <h2 class="uppercase hero-gradient-text text-3xl">
+              <h2
+                class="uppercase hero-gradient-text text-5xl font-bold font-rubik"
+              >
                 CHOOSE YOUR FAVORITE
 
                 <span class="block">GAMES & ACTIVITIES</span>
               </h2>
-              <p>
+              <p class="my-4 text-lg">
                 Pick your top three so we can match you with relevant players!
               </p>
             </div>
-            <div class="bg-overlay rounded-[10px] mt-4">
+            <div
+              class="bg-custom-black-mute border border-custom-purple rounded-[10px] mt-4"
+            >
               <div class="p-4">
-                <div class="flex justify-between">
-                  <div class="flex gap-4">
-                    <button
-                      class="custom-btn2 px-3 active rounded-full cursor-pointer"
-                    >
+                <div class="flex md:flex-row flex-col gap-4 justify-between">
+                  <div class="flex">
+                    <button class="tab px-3 active rounded-full cursor-pointer">
                       Games
                     </button>
-                    <button
-                      class="custom-btn2 px-3 py-1 rounded-full cursor-pointer"
-                    >
+                    <button class="tab px-3 rounded-full cursor-pointer">
                       Activities
                     </button>
                   </div>
                   <!-- search bar -->
-                  <div class="flex gap-2 search-input">
+                  <div
+                    class="flex gap-2 border bg-black border-custom-purple-500 px-2 py-1 rounded-full"
+                  >
                     <div class="w-[18px]">
                       <svg
                         width="16"
@@ -153,7 +156,7 @@
                     </div>
 
                     <input
-                      class="search-input-field"
+                      class="bg-transparent placeholder:text-white w-full md:w-[120px] focus:outline-none"
                       type="text"
                       placeholder="Search Games"
                       id=""
@@ -183,89 +186,102 @@
                   <button class="custom-btn3 rounded-sm px-2">U</button>
                 </div>
               </div>
-              <div class="my-4 py-4">
-                <hr />
-                <div>
+              <div class="py-4">
+                <div class="border-t border-b border-custom-purple-500">
                   <h3 class="px-4 py-1">A</h3>
                 </div>
-                <hr />
               </div>
 
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide pt-8">
                     <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
+                    <div class="p-4 w-[200px] h-[250px] relative">
+                      <div
+                        class="card-border w-[180px] h-[190px] rounded-md bg-gradient-to-r p-[2px] from-custom-purple to-[#5DB7E7]"
+                      >
+                        <div
+                          class="w-full h-full bg-[#3A3540] back rounded-md"
+                        ></div>
+                      </div>
+                      <div
+                        class="absolute w-[155px] h-[180px] rounded-md top-[30%] left-1/2 transform -translate-x-[46%] -translate-y-1/2"
+                      >
+                        <img
+                          class="object-fill rounded-md"
+                          src="./images/leagueoflegends.png"
+                          alt=""
+                        />
+                        <p class="text-white text-center">League of Legends</p>
                       </div>
                     </div>
                     <!-- card -->
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide pt-8">
                     <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
+                    <div class="p-4 w-[200px] h-[250px] relative">
+                      <div
+                        class="card-border w-[180px] h-[190px] rounded-md bg-gradient-to-r p-[2px] from-custom-purple to-[#5DB7E7]"
+                      >
+                        <div
+                          class="w-full h-full bg-[#3A3540] back rounded-md"
+                        ></div>
+                      </div>
+                      <div
+                        class="absolute w-[155px] h-[180px] rounded-md top-[30%] left-1/2 transform -translate-x-[46%] -translate-y-1/2"
+                      >
+                        <img
+                          class="object-fill rounded-md"
+                          src="./images/leagueoflegends.png"
+                          alt=""
+                        />
+                        <p class="text-white text-center">League of Legends</p>
                       </div>
                     </div>
                     <!-- card -->
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide pt-8">
                     <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
+                    <div class="p-4 w-[200px] h-[250px] relative">
+                      <div
+                        class="card-border w-[180px] h-[190px] rounded-md bg-gradient-to-r p-[2px] from-custom-purple to-[#5DB7E7]"
+                      >
+                        <div
+                          class="w-full h-full bg-[#3A3540] back rounded-md"
+                        ></div>
+                      </div>
+                      <div
+                        class="absolute w-[155px] h-[180px] rounded-md top-[30%] left-1/2 transform -translate-x-[46%] -translate-y-1/2"
+                      >
+                        <img
+                          class="object-fill rounded-md"
+                          src="./images/leagueoflegends.png"
+                          alt=""
+                        />
+                        <p class="text-white text-center">League of Legends</p>
                       </div>
                     </div>
                     <!-- card -->
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide pt-8">
                     <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
+                    <div class="p-4 w-[200px] h-[250px] relative">
+                      <div
+                        class="card-border w-[180px] h-[190px] rounded-md bg-gradient-to-r p-[2px] from-custom-purple to-[#5DB7E7]"
+                      >
+                        <div
+                          class="w-full h-full bg-[#3A3540] back rounded-md"
+                        ></div>
                       </div>
-                    </div>
-                    <!-- card -->
-                  </div>
-                  <div class="swiper-slide">
-                    <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
-                      </div>
-                    </div>
-                    <!-- card -->
-                  </div>
-                  <div class="swiper-slide">
-                    <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
-                      </div>
-                    </div>
-                    <!-- card -->
-                  </div>
-                  <div class="swiper-slide">
-                    <!-- card -->
-                    <div class="p-4 card relative">
-                      <div class="card-border"></div>
-                      <div class="absolute img">
-                        <img src="./images/leagueoflegends.png" alt="" />
-                        <p>League of Legends</p>
+                      <div
+                        class="absolute w-[155px] h-[180px] rounded-md top-[30%] left-1/2 transform -translate-x-[46%] -translate-y-1/2"
+                      >
+                        <img
+                          class="object-fill rounded-md"
+                          src="./images/leagueoflegends.png"
+                          alt=""
+                        />
+                        <p class="text-white text-center">League of Legends</p>
                       </div>
                     </div>
                     <!-- card -->
